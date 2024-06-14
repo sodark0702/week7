@@ -3,6 +3,7 @@ package OOP;
 public class People {
 	private String name;
 	private int birth;
+
 	public People(String name, int birth) {
 		super();
 		this.name = name;
@@ -23,6 +24,28 @@ public class People {
 
 	public void setBirth(int birth) {
 		this.birth = birth;
+	}
+
+	public double isEmployee(People p) {
+		double s = 0;
+		if (p instanceof Employee) {
+			s = ((Employee) p).getSalary();
+		}
+		return s;
+	}
+	public double isManageEmployee(People p) {
+		double s = 0;
+		if (p instanceof ManageEmployee) {
+			s = ((ManageEmployee) p).getPhucapChucVu();
+		}
+		return s;
+	}
+	public double isTeacher(People p) {
+		double s = 0;
+		if (p instanceof Teacher) {
+			s = ((Teacher) p).getThulaoGG();
+		}
+		return s;
 	}
 
 	@Override

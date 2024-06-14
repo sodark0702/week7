@@ -38,7 +38,7 @@ public class Employee extends People {
 
 	@Override
 	public String toString() {
-		return super.toString() + " " + salary + ", " + acceptDay.toString() + ", " + ban.toString();
+		return super.toString() + "\t " + salary + ", " + acceptDay.toString() + ", " + ban.toString();
 	}
 
 }
